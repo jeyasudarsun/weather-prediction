@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 300px;
+            margin-top: 20px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <h2>Prediction: {{ prediction }}</h2>
+    <img src="{{ img_path }}" alt="Uploaded Image">
+    <br>
+    <a href="/">Upload another image</a>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Prediction</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background: url('/static/image--WiA_vG3H-transformed.jpeg');
+            color: #0f0f0193;
+        }
+        h1 {
+            color: #000000;
+            margin-bottom: 10px;
+        }
+        form {
+            form {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #004494;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload an image for prediction</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
